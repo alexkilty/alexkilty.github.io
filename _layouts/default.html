@@ -1,20 +1,10 @@
 <!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+<html lang="en">
+    {% include head.html %}
+    <body data-spy="scroll" data-offset="0" data-target="#navigation">
+        {% include navigation.html %}
         {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+        {% include footer.html %}
+        {% include analytics.html %}
+    </body>
 </html>
